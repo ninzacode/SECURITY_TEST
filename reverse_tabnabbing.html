@@ -2,10 +2,8 @@
   <body>
     Reverse Tebnabing Test Page
     <script>
-    alert(window.opener);
     if(window.opener){
-      window.opener.location = "https://github.com/ninzacode";
-      alert("vulnerable");
+      window.opener.parent.location = "https://github.com/ninzacode";
     }
     </script>
   </body>
