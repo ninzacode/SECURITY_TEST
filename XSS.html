@@ -1,0 +1,15 @@
+<html>
+<title>
+ninzacode security
+</title>
+<body>
+  <h1>This page is made for XSS Test</h1>
+  <br>
+  <script>
+    const urlParams = new URL(location.href).searchParams;
+    const cookie = urlParams.get('cookie');
+    document.write("Cookie :");
+    document.write(cookie);
+  </script>
+  </body>
+</html>
