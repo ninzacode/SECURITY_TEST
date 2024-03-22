@@ -3,7 +3,9 @@
     <h1>Reverse Tebnabing Test Page</h1>
     <h1>Check out the previous tab</h1>
     <script>
-    window.opener.location = "https://www.naver.com";
+    if(window.opener){
+      window.opener.location = "https://www.naver.com";
+    }
     </script>
   </body>
 </html>
